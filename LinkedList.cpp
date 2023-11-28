@@ -91,30 +91,30 @@ void printList(Node* node) {
 int main() {
     Node* head = nullptr;
 
-    // Test addfront
+    
     addfront(&head, 3);
     addfront(&head, 2);
     addfront(&head, 1);
 
-    // Test addafter
+    
     Node* middleNode = head->next;
     addafter(middleNode, 4);
 
-    // Test addend
+    
     addend(&head, 5);
 
-    // Test deleteNode
+    
     deleteNode(&head, 2);
 
-    // Test GetNth
+    
     int index = 2;
     int dataAtIndex = GetNth(head, index);
 
-    // Print the final list
+   
     cout << "Final List: ";
     printList(head);
 
-    // Print the result of GetNth
+    
     cout << "Data at index " << index << ": " << dataAtIndex << endl;
 
     return 0;
